@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background-color: #E2E2E2;
+}
+a {
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+}
+a:hover {
+    text-decoration: none;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+button:focus {
+    outline: none;
+}
+/* 宽幅 */
+.kuaidian-body-width{
+    width: 660px;
+    margin: 0 auto;
+}
+/* 首页背景色 */
+.kuaidian-background {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height:502px;
+    background:linear-gradient(0deg,rgba(225,225,225,1) 0%,rgba(0,72,255,1) 100%);
+    background-repeat: no-repeat;
+}
+/* 首页导航栏 */
+.kuaidian-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 132px;
+    font-size: 24px;
+    color: #FFF;
+}
+.kuaidian-nav>div {
+    margin: auto 0;
+}
+.kuaidian-nav .kuaidian-user {
+    display: flex;
+    justify-content: space-between;
+}
+.kuaidian-nav .kuaidian-user>span {
+    margin: auto 0;
+}
+.kuaidian-nav .kuaidian-user>span:nth-child(1) {
+    height: 51px;
+}
+.kuaidian-nav .kuaidian-user>span:nth-child(1) img {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+}
+.kuaidian-nav .kuaidian-user>span:nth-child(2) {
+    margin-left: 26px;
+}
+/* 首页搜索框 */
+.kuaidian-search {
+    display: flex;
+    justify-content: space-between;
+    height: 73px;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+.kuaidian-search>div {
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+    margin: 20px 18px 18px 28px;
+}
+.kuaidian-search input[type="text"] {
+    width: 579px;
+    border: none;
+    font-size: 30px;
+    color: #555;
+    border-radius: 10px;
+}
+/* 首页子栏目 */
+.kuaidian-knowledge,
+.kuaidian-learnEnglish {
+    margin-top: 27px;
+    padding-bottom :20px; 
+    border-radius: 10px;
+    background-color: #FFF;
+}
+.kuaidian-knowledge>div,
+.kuaidian-learnEnglish>div {
+    padding: 0 22px;
+}
+.kuaidian-knowledge>div:nth-child(1),
+.kuaidian-learnEnglish>div:nth-child(1) {
+    padding-top: 19px;
+    font-size: 18px;
+    color: #555555;
+}
+.kuaidian-knowledge>div:nth-child(2),
+.kuaidian-learnEnglish>div:nth-child(2) {
+    margin-top: 24px;
+    margin-bottom: 34px;
+    font-size: 30px;
+}
+.kuaidian-knowledge .kuaidian-more,
+.kuaidian-learnEnglish .kuaidian-more {
+    border: none;
+    margin: 10px auto 0px;
+    width:615px;
+    height:53px;
+    background:rgba(225,225,225,1);
+    border-radius:10px;
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    line-height: 53px;
+}
+/* 广告 */
+.kuaidian-advertisement img {
+    width:660px;
+    height:185px;
+    border-radius:10px;
+    margin: 34px auto 5px;
+}
+/* 逐条新闻 */
+.kuaidian-knowledge .kuaidian-news,
+.kuaidian-learnEnglish .kuaidian-news {
+    margin: 0 22.5px;
+    display: flex;
+    justify-content: space-between;
+    height: 115px;
+    margin-bottom: 30px;
+}
+.kuaidian-knowledge .kuaidian-news>div:nth-child(1)>div:nth-child(1),
+.kuaidian-learnEnglish .kuaidian-news>div:nth-child(1)>div:nth-child(1) {
+    width: 375px;
+    font-size: 24px;
+    color: black;
+}
+.kuaidian-knowledge .kuaidian-news>div:nth-child(1)>div:nth-child(2),
+.kuaidian-learnEnglish .kuaidian-news>div:nth-child(1)>div:nth-child(2) {
+    margin-top: 20px;
+    width: 375px;
+    font-size: 18px;
+    color: #555555;
+}
+.kuaidian-knowledge>a:last-child,
+.kuaidian-learnEnglish>a:last-child {
+    margin-bottom: 0;
+}
+.kuaidian-news>div:nth-child(2) {
+    float: right;
+}
+.kuaidian-news>div:nth-child(2) img {
+    width: 224px;
+    height: 115px;
+    border-radius: 10px;
+}
+
+/* 首页底栏 */
+.kuaidian-block {
+    height: 99px;
+}
+.kuaidian-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    background-color: #FFF;
+    height: 99px;
+}
+.kuaidian-menu>a {
+    margin: auto 0;
+}
+.kuaidian-menu>a:nth-child(1) {
+    margin-left: 97px;
+}
+.kuaidian-menu>a:nth-child(3) {
+    margin-right: 95px;
+}
+.kuaidian-menu>a:visited {
+    color: #007FFF;
+}
+.kuaidian-menu>a>div {
+    color: #545454;
+    width: 44px;
+    height: 44px;
+    font-size: 44px;
+}
