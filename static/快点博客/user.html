@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心页</title>
+    <!-- 引入css文件 -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- 引入阿里矢量图 -->
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <style>
+        body{
+            background: #fff;
+        }
+        .kuaidian-top-nav {
+            padding: 20px 0;
+        }
+
+        .kuaidian-top-nav a i {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .kuaidian-usertext {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .kuaidian-usertext div {
+            width: 50%;
+            height: 110px;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .kuaidian-usertext div .h {
+            font-size: 18px;
+            align-items: flex-end;
+            display: flex;
+        }
+
+        .kuaidian-usertext div span {
+            font-size: 10px;
+            color: rgba(85, 85, 85, 1);
+        }
+
+        .kuaidian-usertext div a {
+            position: relative;
+            overflow: hidden;
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .kuaidian-usertext div a .userimg {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+
+        }
+
+        .userimg-b {
+            position: absolute;
+            z-index: -1;
+            filter: blur(8px);
+            opacity: .1;
+            width: 100%;
+            right: 0;
+            top: 0;
+        }
+
+        .kuaidian-vip .vip {
+            width: 100%;
+            height: 60px;
+            display: block;
+            line-height: 60px;
+            text-indent: 20px;
+            background: linear-gradient(0deg, rgba(241, 209, 160, 1) 0%, rgba(252, 234, 207, 1) 100%);
+            border-radius: 10px;
+        }
+
+        .kuaidian-guide {
+            margin-top: 27px;
+            padding: 10px 0;
+            border-radius: 10px;
+            background-color: #FFF;
+            box-shadow: 0 0 10px 5px rgba(200, 200, 200, .1);
+        }
+
+        .kuaidian-guide .guide-li {
+            padding: 5px 20px;
+            line-height: 40px;
+        }
+
+        .kuaidian-guide .guide-li a {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .kuaidian-guide .guide-li a div .guide-text {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 用户头像高斯模糊背景背景 -->
+    <img class="userimg-b" src="images/user.jpg" alt="">
+
+    <!-- 个人资料头部区域 -->
+    <div class="kuaidian-body-width kuaidian-user">
+        <div class="kuaidian-top-nav">
+            <a href="#"><i class="iconfont icon-sixin"></i></a>
+        </div>
+        <div class="kuaidian-usertext">
+            <div>
+                <span class="h">188****8888</span>
+                <span>编辑个人资料</span>
+            </div>
+            <div>
+                <a href="">
+                    <img class="userimg" src="images/user.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 个人资料VIP区域 -->
+    <div class="kuaidian-body-width kuaidian-vip">
+        <a class="vip">
+            <i class="iconfont icon-shenqingchengweiVIP"></i>
+            <span>快点教育VIP</span>
+        </a>
+    </div>
+
+
+
+    <!-- 个人资料引导区域 -->
+    <div class="kuaidian-body-width kuaidian-guide">
+        <ul>
+            <li class="guide-li"><a href="">
+                    <div>
+                        <i style="padding-right: 10px" class="iconfont icon-shenqingchengweiVIP"></i>
+                        <span>等级测试</span>
+                    </div>
+                    <div>
+                        <span class="guide-text">A1基础</span>
+                        <i style="padding-left: 10px" class="iconfont icon-tubiaozhizuo-"></i>
+                    </div>
+                </a></li>
+            <li class="guide-li"><a href="">
+                    <div>
+                        <i style="padding-right: 10px" class="iconfont icon-shenqingchengweiVIP"></i>
+                        <span>等级测试</span>
+                    </div>
+                    <div>
+                        <span class="guide-text">A1基础</span>
+                        <i style="padding-left: 10px" class="iconfont icon-tubiaozhizuo-"></i>
+                    </div>
+                </a></li>
+            <li class="guide-li"><a href="">
+                    <div>
+                        <i style="padding-right: 10px" class="iconfont icon-shenqingchengweiVIP"></i>
+                        <span>等级测试</span>
+                    </div>
+                    <div>
+                        <span class="guide-text">A1基础</span>
+                        <i style="padding-left: 10px" class="iconfont icon-tubiaozhizuo-"></i>
+                    </div>
+                </a></li>
+        </ul>
+    </div>
+
+
+     <!-- 个人资料引导区域二 -->
+     <div class="kuaidian-body-width kuaidian-guide">
+            <ul>
+                <li class="guide-li"><a href="">
+                        <div>
+                            <i style="padding-right: 10px" class="iconfont icon-shenqingchengweiVIP"></i>
+                            <span>等级测试</span>
+                        </div>
+                        <div>
+                            <span class="guide-text">A1基础</span>
+                            <i style="padding-left: 10px" class="iconfont icon-tubiaozhizuo-"></i>
+                        </div>
+                    </a></li>
+                <li class="guide-li"><a href="">
+                        <div>
+                            <i style="padding-right: 10px" class="iconfont icon-shenqingchengweiVIP"></i>
+                            <span>等级测试</span>
+                        </div>
+                        <div>
+                            <span class="guide-text">A1基础</span>
+                            <i style="padding-left: 10px" class="iconfont icon-tubiaozhizuo-"></i>
+                        </div>
+                    </a></li>
+                <li class="guide-li"><a href="">
+                        <div>
+                            <i style="padding-right: 10px" class="iconfont icon-shenqingchengweiVIP"></i>
+                            <span>等级测试</span>
+                        </div>
+                        <div>
+                            <span class="guide-text">A1基础</span>
+                            <i style="padding-left: 10px" class="iconfont icon-tubiaozhizuo-"></i>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="kuaidian-block"></div>
+    <div class="kuaidian-menu">
+        <a href="#"><div class="iconfont icon-shouye1"></div></a>
+        <a href="#"><div class="iconfont icon-ziliaobaosong"></div></a>
+        <a href="#"><div class="iconfont icon-geren2"></div></a>
+    </div>
+
+</body>
+
+</html>
