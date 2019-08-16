@@ -1,0 +1,137 @@
+body {
+    min-height: 100%;
+}
+/* 头部搜索框 */
+.kuaidian-headBackground {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    background:linear-gradient(0deg,rgba(255,255,255,1) 0%,rgba(0,126,255,1) 0%,rgba(0,81,163,1) 100%);
+}
+.kuaidian-search>div {
+    color: #007EFF;
+}
+@media only screen and (max-width: 1024px) {
+    .kuaidian-headBackground {
+        margin-top: -30px;
+        height: 122px;
+    }
+    .kuaidian-search {
+        margin: 30px auto 19px;
+    }
+    .kuaidian-advertisement img {
+        margin-top: 39px;
+    }
+    .kuaidian-searchTop {
+        background-color: #FFF;
+        margin: 0 auto;
+        margin-top: 36px;
+        padding-top: 30px; 
+        width: 660px;
+        border-radius: 10px;
+    }
+    .kuaidian-searchTop>div:nth-child(1) {
+        width: 120px;
+        font-size: 30px;
+        margin: 0px 512px 0px 28px;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList {
+        display: flex;
+        flex-direction: column;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 38px;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div:nth-child(1) {
+        margin-top: 36px;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div>div:nth-child(1) {
+        margin: 11px 29px 12px 43px;
+        height: 55px;
+        font-size: 40px;
+        color: #007CFE;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div:nth-child(2)>div:nth-child(1) {
+        color: #0052A6;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div:nth-child(3)>div:nth-child(1) {
+        color: #00397C;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div:nth-child(4)>div:nth-child(1),
+    .kuaidian-searchTop .kuaidian-searchTopList>div:nth-child(5)>div:nth-child(1) {
+        color: #555;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div>div:nth-child(2)>div:nth-child(1) {
+        width: 536px;
+        font-size: 24px;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div>div:nth-child(2)>div:nth-child(2) {
+        margin-top: 11px;
+        font-size: 18px;
+        color: #555;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .kuaidian-headBackground {
+        margin-top: -14px;
+        height: 59px;
+    }
+    .kuaidian-search {
+        margin: 14px auto 9px;
+    }
+    .kuaidian-advertisement img {
+        margin-top: 39px;
+    }
+    .kuaidian-searchTop {
+        background-color: #FFF;
+        margin: 0 auto;
+        margin-top: 36px;
+        padding-top: 14px; 
+        width: 317px;
+        border-radius: 10px;
+    }
+    .kuaidian-searchTop>div:nth-child(1) {
+        width: 120px;
+        font-size: 14px;
+        margin: 0px 246px 0px 13px;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList {
+        display: flex;
+        flex-direction: column;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 18px;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div:nth-child(1) {
+        margin-top: 17px;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div>div:nth-child(1) {
+        margin: 5px 14px 6px 21px;
+        height: 15px;
+        font-size: 19px;
+        color: #007CFE;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div:nth-child(2)>div:nth-child(1) {
+        color: #0052A6;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div:nth-child(3)>div:nth-child(1) {
+        color: #00397C;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div:nth-child(4)>div:nth-child(1),
+    .kuaidian-searchTop .kuaidian-searchTopList>div:nth-child(5)>div:nth-child(1) {
+        color: #555;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div>div:nth-child(2)>div:nth-child(1) {
+        width: 257px;
+        font-size: 12px;
+    }
+    .kuaidian-searchTop .kuaidian-searchTopList>div>div:nth-child(2)>div:nth-child(2) {
+        margin-top: 5px;
+        font-size: 9px;
+        color: #555;
+    }
+}

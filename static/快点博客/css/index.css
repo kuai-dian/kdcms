@@ -74,6 +74,7 @@ button:focus {
         background-color: #FFF;
     }
     .kuaidian-search>div {
+        color: #555;
         width: 35px;
         height: 35px;
         font-size: 35px;
@@ -83,6 +84,7 @@ button:focus {
         width: 579px;
         border: none;
         font-size: 30px;
+        line-height: 73px;
         color: #555;
         border-radius: 10px;
     }
@@ -256,10 +258,11 @@ button:focus {
         width: 17px;
         height: 17px;
         font-size: 17px;
-        margin: 10px 9px 9px 22px;
+        margin: 10px 9px 9px 13px;
     }
     .kuaidian-search input[type="text"] {
         width: 282px;
+        height: 35px;
         border: none;
         font-size: 14px;
         color: #555;
