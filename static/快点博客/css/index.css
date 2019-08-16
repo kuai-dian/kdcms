@@ -200,7 +200,7 @@ button:focus {
         font-size: 44px;
     }
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
     /* 宽幅 */
     .kuaidian-body-width{
         width: 317px;
@@ -374,8 +374,8 @@ button:focus {
     }
     .kuaidian-menu>a>div {
         color: #545454;
-        width: 44px;
-        height: 44px;
-        font-size: 44px;
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
     }
 }
