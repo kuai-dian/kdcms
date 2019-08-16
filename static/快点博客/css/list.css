@@ -1,0 +1,59 @@
+body {
+    background-color: #FFF;
+}
+@media only screen and (max-width: 1024px) {
+    /* 头部 */
+    .kuaidian-title {
+        width: 611px;
+        color: #555555;
+        font-size: 24px;
+        height: 76px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .kuaidian-title>a,
+    .kuaidian-title>div {
+        margin: auto 0;
+    }
+    .kuaidian-title>a>div {
+        color: #555555;
+        width: 34px;
+        width: 29px;
+        font-size: 25px;
+    }
+    /* 分界线 */
+    .kuaidian-line {
+        width: 750px;
+        height: 2px;
+        background-color: #E2E2E2;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    /* 头部 */
+    .kuaidian-title {
+        width: 317px;
+        color: #555555;
+        font-size: 24px;
+        height: 76px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .kuaidian-title>a,
+    .kuaidian-title>div {
+        margin: auto 0;
+    }
+    .kuaidian-title>a>div {
+        color: #555555;
+        width: 34px;
+        width: 29px;
+        font-size: 25px;
+    }
+    /* 分界线 */
+    .kuaidian-line {
+        width: 750px;
+        height: 2px;
+        background-color: #E2E2E2;
+        margin-bottom: 30px;
+    }
+}

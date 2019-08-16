@@ -21,177 +21,361 @@ input[type="text"]:focus {
 button:focus {
     outline: none;
 }
-/* 宽幅 */
-.kuaidian-body-width{
-    width: 660px;
-    margin: 0 auto;
+@media only screen and (max-width: 1024px) {
+    /* 宽幅 */
+    .kuaidian-body-width{
+        width: 660px;
+        margin: 0 auto;
+    }
+    /* 首页背景色 */
+    .kuaidian-background {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        height:502px;
+        background:linear-gradient(0deg,rgba(225,225,225,1) 0%,rgba(0,72,255,1) 100%);
+        background-repeat: no-repeat;
+    }
+    /* 首页导航栏 */
+    .kuaidian-nav {
+        display: flex;
+        justify-content: space-between;
+        height: 132px;
+        font-size: 24px;
+        color: #FFF;
+    }
+    .kuaidian-nav>div {
+        margin: auto 0;
+    }
+    .kuaidian-nav .kuaidian-user {
+        display: flex;
+        justify-content: space-between;
+    }
+    .kuaidian-nav .kuaidian-user>span {
+        margin: auto 0;
+    }
+    .kuaidian-nav .kuaidian-user>span:nth-child(1) {
+        height: 51px;
+    }
+    .kuaidian-nav .kuaidian-user>span:nth-child(1) img {
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+    }
+    .kuaidian-nav .kuaidian-user>span:nth-child(2) {
+        margin-left: 26px;
+    }
+    /* 首页搜索框 */
+    .kuaidian-search {
+        display: flex;
+        justify-content: space-between;
+        height: 73px;
+        border-radius: 10px;
+        background-color: #FFF;
+    }
+    .kuaidian-search>div {
+        width: 35px;
+        height: 35px;
+        font-size: 35px;
+        margin: 20px 18px 18px 28px;
+    }
+    .kuaidian-search input[type="text"] {
+        width: 579px;
+        border: none;
+        font-size: 30px;
+        color: #555;
+        border-radius: 10px;
+    }
+    /* 首页子栏目 */
+    .kuaidian-knowledge,
+    .kuaidian-learnEnglish {
+        margin-top: 27px;
+        padding-bottom :20px; 
+        border-radius: 10px;
+        background-color: #FFF;
+    }
+    .kuaidian-knowledge>div,
+    .kuaidian-learnEnglish>div {
+        padding: 0 22px;
+    }
+    .kuaidian-knowledge>div:nth-child(1),
+    .kuaidian-learnEnglish>div:nth-child(1) {
+        padding-top: 19px;
+        font-size: 18px;
+        color: #555555;
+    }
+    .kuaidian-knowledge>div:nth-child(2),
+    .kuaidian-learnEnglish>div:nth-child(2) {
+        margin-top: 24px;
+        margin-bottom: 34px;
+        font-size: 30px;
+    }
+    .kuaidian-knowledge .kuaidian-more,
+    .kuaidian-learnEnglish .kuaidian-more {
+        border: none;
+        margin: 10px auto 0px;
+        width:615px;
+        height:53px;
+        background:rgba(225,225,225,1);
+        border-radius:10px;
+        font-size: 18px;
+        color: #555;
+        text-align: center;
+        line-height: 53px;
+    }
+    /* 广告 */
+    .kuaidian-advertisement img {
+        width:660px;
+        height:185px;
+        border-radius:10px;
+        margin: 34px auto 5px;
+    }
+    /* 逐条新闻 */
+    .kuaidian-list .kuaidian-news,
+    .kuaidian-knowledge .kuaidian-news,
+    .kuaidian-learnEnglish .kuaidian-news {
+        margin: 0 22.5px;
+        display: flex;
+        justify-content: space-between;
+        height: 115px;
+        margin-bottom: 30px;
+    }
+    .kuaidian-list .kuaidian-news>div:nth-child(1)>div:nth-child(1),
+    .kuaidian-knowledge .kuaidian-news>div:nth-child(1)>div:nth-child(1),
+    .kuaidian-learnEnglish .kuaidian-news>div:nth-child(1)>div:nth-child(1) {
+        width: 375px;
+        font-size: 24px;
+        color: black;
+    }
+    .kuaidian-list .kuaidian-news>div:nth-child(1)>div:nth-child(2),
+    .kuaidian-knowledge .kuaidian-news>div:nth-child(1)>div:nth-child(2),
+    .kuaidian-learnEnglish .kuaidian-news>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 20px;
+        width: 375px;
+        font-size: 18px;
+        color: #555555;
+    }
+    .kuaidian-list>a:last-child,
+    .kuaidian-knowledge>a:last-child,
+    .kuaidian-learnEnglish>a:last-child {
+        margin-bottom: 0;
+    }
+    .kuaidian-news>div:nth-child(2) {
+        float: right;
+    }
+    .kuaidian-news>div:nth-child(2) img {
+        width: 224px;
+        height: 115px;
+        border-radius: 10px;
+    }
+    /* 首页底栏 */
+    .kuaidian-block {
+        height: 99px;
+    }
+    .kuaidian-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        background-color: #FFF;
+        height: 99px;
+    }
+    .kuaidian-menu>a {
+        margin: auto 0;
+    }
+    .kuaidian-menu>a:nth-child(1) {
+        margin-left: 97px;
+    }
+    .kuaidian-menu>a:nth-child(3) {
+        margin-right: 95px;
+    }
+    .kuaidian-menu>a:visited {
+        color: #007FFF;
+    }
+    .kuaidian-menu>a>div {
+        color: #545454;
+        width: 44px;
+        height: 44px;
+        font-size: 44px;
+    }
 }
-/* 首页背景色 */
-.kuaidian-background {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    height:502px;
-    background:linear-gradient(0deg,rgba(225,225,225,1) 0%,rgba(0,72,255,1) 100%);
-    background-repeat: no-repeat;
-}
-/* 首页导航栏 */
-.kuaidian-nav {
-    display: flex;
-    justify-content: space-between;
-    height: 132px;
-    font-size: 24px;
-    color: #FFF;
-}
-.kuaidian-nav>div {
-    margin: auto 0;
-}
-.kuaidian-nav .kuaidian-user {
-    display: flex;
-    justify-content: space-between;
-}
-.kuaidian-nav .kuaidian-user>span {
-    margin: auto 0;
-}
-.kuaidian-nav .kuaidian-user>span:nth-child(1) {
-    height: 51px;
-}
-.kuaidian-nav .kuaidian-user>span:nth-child(1) img {
-    width: 51px;
-    height: 51px;
-    border-radius: 50%;
-}
-.kuaidian-nav .kuaidian-user>span:nth-child(2) {
-    margin-left: 26px;
-}
-/* 首页搜索框 */
-.kuaidian-search {
-    display: flex;
-    justify-content: space-between;
-    height: 73px;
-    border-radius: 10px;
-    background-color: #FFF;
-}
-.kuaidian-search>div {
-    width: 35px;
-    height: 35px;
-    font-size: 35px;
-    margin: 20px 18px 18px 28px;
-}
-.kuaidian-search input[type="text"] {
-    width: 579px;
-    border: none;
-    font-size: 30px;
-    color: #555;
-    border-radius: 10px;
-}
-/* 首页子栏目 */
-.kuaidian-knowledge,
-.kuaidian-learnEnglish {
-    margin-top: 27px;
-    padding-bottom :20px; 
-    border-radius: 10px;
-    background-color: #FFF;
-}
-.kuaidian-knowledge>div,
-.kuaidian-learnEnglish>div {
-    padding: 0 22px;
-}
-.kuaidian-knowledge>div:nth-child(1),
-.kuaidian-learnEnglish>div:nth-child(1) {
-    padding-top: 19px;
-    font-size: 18px;
-    color: #555555;
-}
-.kuaidian-knowledge>div:nth-child(2),
-.kuaidian-learnEnglish>div:nth-child(2) {
-    margin-top: 24px;
-    margin-bottom: 34px;
-    font-size: 30px;
-}
-.kuaidian-knowledge .kuaidian-more,
-.kuaidian-learnEnglish .kuaidian-more {
-    border: none;
-    margin: 10px auto 0px;
-    width:615px;
-    height:53px;
-    background:rgba(225,225,225,1);
-    border-radius:10px;
-    font-size: 18px;
-    color: #555;
-    text-align: center;
-    line-height: 53px;
-}
-/* 广告 */
-.kuaidian-advertisement img {
-    width:660px;
-    height:185px;
-    border-radius:10px;
-    margin: 34px auto 5px;
-}
-/* 逐条新闻 */
-.kuaidian-knowledge .kuaidian-news,
-.kuaidian-learnEnglish .kuaidian-news {
-    margin: 0 22.5px;
-    display: flex;
-    justify-content: space-between;
-    height: 115px;
-    margin-bottom: 30px;
-}
-.kuaidian-knowledge .kuaidian-news>div:nth-child(1)>div:nth-child(1),
-.kuaidian-learnEnglish .kuaidian-news>div:nth-child(1)>div:nth-child(1) {
-    width: 375px;
-    font-size: 24px;
-    color: black;
-}
-.kuaidian-knowledge .kuaidian-news>div:nth-child(1)>div:nth-child(2),
-.kuaidian-learnEnglish .kuaidian-news>div:nth-child(1)>div:nth-child(2) {
-    margin-top: 20px;
-    width: 375px;
-    font-size: 18px;
-    color: #555555;
-}
-.kuaidian-knowledge>a:last-child,
-.kuaidian-learnEnglish>a:last-child {
-    margin-bottom: 0;
-}
-.kuaidian-news>div:nth-child(2) {
-    float: right;
-}
-.kuaidian-news>div:nth-child(2) img {
-    width: 224px;
-    height: 115px;
-    border-radius: 10px;
-}
-
-/* 首页底栏 */
-.kuaidian-block {
-    height: 99px;
-}
-.kuaidian-menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    bottom: 0;
-    background-color: #FFF;
-    height: 99px;
-}
-.kuaidian-menu>a {
-    margin: auto 0;
-}
-.kuaidian-menu>a:nth-child(1) {
-    margin-left: 97px;
-}
-.kuaidian-menu>a:nth-child(3) {
-    margin-right: 95px;
-}
-.kuaidian-menu>a:visited {
-    color: #007FFF;
-}
-.kuaidian-menu>a>div {
-    color: #545454;
-    width: 44px;
-    height: 44px;
-    font-size: 44px;
+@media only screen and (max-width: 414px) {
+    /* 宽幅 */
+    .kuaidian-body-width{
+        width: 317px;
+        margin: 0 auto;
+    }
+    /* 首页背景色 */
+    .kuaidian-background {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        height:502px;
+        background:linear-gradient(0deg,rgba(225,225,225,1) 0%,rgba(0,72,255,1) 100%);
+        background-repeat: no-repeat;
+    }
+    /* 首页导航栏 */
+    .kuaidian-nav {
+        display: flex;
+        justify-content: space-between;
+        height: 63px;
+        font-size: 12px;
+        color: #FFF;
+    }
+    .kuaidian-nav>div {
+        margin: auto 0;
+    }
+    .kuaidian-nav .kuaidian-user {
+        display: flex;
+        justify-content: space-between;
+    }
+    .kuaidian-nav .kuaidian-user>span {
+        margin: auto 0;
+    }
+    .kuaidian-nav .kuaidian-user>span:nth-child(1) {
+        height: 24px;
+    }
+    .kuaidian-nav .kuaidian-user>span:nth-child(1) img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+    .kuaidian-nav .kuaidian-user>span:nth-child(2) {
+        margin-left: 12px;
+    }
+    /* 首页搜索框 */
+    .kuaidian-search {
+        display: flex;
+        justify-content: space-between;
+        height: 35px;
+        border-radius: 5px;
+        background-color: #FFF;
+    }
+    .kuaidian-search>div {
+        width: 17px;
+        height: 17px;
+        font-size: 17px;
+        margin: 10px 9px 9px 22px;
+    }
+    .kuaidian-search input[type="text"] {
+        width: 282px;
+        border: none;
+        font-size: 14px;
+        color: #555;
+        border-radius: 5px;
+    }
+    /* 首页子栏目 */
+    .kuaidian-knowledge,
+    .kuaidian-learnEnglish {
+        margin-top: 13px;
+        padding-bottom :10px; 
+        border-radius: 5px;
+        background-color: #FFF;
+    }
+    .kuaidian-knowledge>div,
+    .kuaidian-learnEnglish>div {
+        padding: 0 11px;
+    }
+    .kuaidian-knowledge>div:nth-child(1),
+    .kuaidian-learnEnglish>div:nth-child(1) {
+        padding-top: 9px;
+        font-size: 9px;
+        color: #555555;
+    }
+    .kuaidian-knowledge>div:nth-child(2),
+    .kuaidian-learnEnglish>div:nth-child(2) {
+        margin-top: 12px;
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    .kuaidian-knowledge .kuaidian-more,
+    .kuaidian-learnEnglish .kuaidian-more {
+        border: none;
+        margin: 5px auto 0px;
+        width:295px;
+        height:25px;
+        background:rgba(225,225,225,1);
+        border-radius:5px;
+        font-size: 9px;
+        color: #555;
+        text-align: center;
+        line-height: 25px;
+    }
+    /* 广告 */
+    .kuaidian-advertisement img {
+        width: 317px;
+        height: 89px;
+        border-radius: 5px;
+        margin: 16px auto 3px;
+    }
+    /* 逐条新闻 */
+    .kuaidian-list .kuaidian-news,
+    .kuaidian-knowledge .kuaidian-news,
+    .kuaidian-learnEnglish .kuaidian-news {
+        margin: 0 11px;
+        display: flex;
+        justify-content: space-between;
+        height: 55px;
+        margin-bottom: 14px;
+    }
+    .kuaidian-list .kuaidian-news>div:nth-child(1)>div:nth-child(1),
+    .kuaidian-knowledge .kuaidian-news>div:nth-child(1)>div:nth-child(1),
+    .kuaidian-learnEnglish .kuaidian-news>div:nth-child(1)>div:nth-child(1) {
+        width: 180px;
+        font-size: 12px;
+        color: black;
+    }
+    .kuaidian-list .kuaidian-news>div:nth-child(1)>div:nth-child(2),
+    .kuaidian-knowledge .kuaidian-news>div:nth-child(1)>div:nth-child(2),
+    .kuaidian-learnEnglish .kuaidian-news>div:nth-child(1)>div:nth-child(2) {
+        margin-top: 10px;
+        width: 180px;
+        font-size: 9px;
+        color: #555555;
+    }
+    .kuaidian-list>a:last-child,
+    .kuaidian-knowledge>a:last-child,
+    .kuaidian-learnEnglish>a:last-child {
+        margin-bottom: 0;
+    }
+    .kuaidian-news>div:nth-child(2) {
+        float: right;
+    }
+    .kuaidian-news>div:nth-child(2) img {
+        width: 108px;
+        height: 55px;
+        border-radius: 5px;
+    }
+    /* 首页底栏 */
+    .kuaidian-block {
+        height: 48px;
+    }
+    .kuaidian-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        background-color: #FFF;
+        height: 48px;
+    }
+    .kuaidian-menu>a {
+        margin: auto 0;
+    }
+    .kuaidian-menu>a:nth-child(1) {
+        margin-left: 37px;
+    }
+    .kuaidian-menu>a:nth-child(3) {
+        margin-right: 44px;
+    }
+    .kuaidian-menu>a:visited {
+        color: #007FFF;
+    }
+    .kuaidian-menu>a>div {
+        color: #545454;
+        width: 44px;
+        height: 44px;
+        font-size: 44px;
+    }
 }
