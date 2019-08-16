@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="kuaidian-background"></div>
     <div class="kuaidian-body-width kuaidian-nav">
@@ -26,8 +28,13 @@
     </div>
     <div class="kuaidian-body-width kuaidian-search">
         <div class="iconfont icon-sousuo"></div>
-        <a href=""><input type="text" placeholder="海量知识技巧，仅此一步！"></a>
+        <input type="text" value="海量知识技巧，仅此一步！">
     </div>
+
+    <div style="display: none" id="kuaidian-search" class="kuaidian-body-width kuaidian-search">
+            sousou
+    </div>
+
     <div class="kuaidian-body-width kuaidian-knowledge">
         <div>知识技巧精选</div>
         <div>提升做题效率、准确率</div>
@@ -45,7 +52,9 @@
             </div>
             <div><img src="images/user.jpg" alt=""></div>
         </a>
-        <a href="#"><div class="kuaidian-more">天哪还不够，我想看更多</div></a>
+        <a href="#">
+            <div class="kuaidian-more">天哪还不够，我想看更多</div>
+        </a>
     </div>
     <div class="kuaidian-body-width kuaidian-advertisement">
         <a href=""><img src="images/user.jpg" alt=""></a>
@@ -67,13 +76,54 @@
             </div>
             <div><img src="images/user.jpg" alt=""></div>
         </a>
-        <a href="#"><div class="kuaidian-more">天哪还不够，我想看更多</div></a>
+        <a href="#">
+            <div class="kuaidian-more">天哪还不够，我想看更多</div>
+        </a>
     </div>
     <div class="kuaidian-block"></div>
     <div class="kuaidian-menu">
-        <a href="#"><div class="iconfont icon-shouye1"></div></a>
-        <a href="#"><div class="iconfont icon-ziliaobaosong"></div></a>
-        <a href="#"><div class="iconfont icon-geren2"></div></a>
+        <a href="#">
+            <div class="iconfont icon-shouye1"></div>
+        </a>
+        <a href="#">
+            <div class="iconfont icon-ziliaobaosong"></div>
+        </a>
+        <a href="#">
+            <div class="iconfont icon-geren2"></div>
+        </a>
     </div>
+
+    <script>
+        function scroll() {
+            //console.log("打印log日志");实时看下效果
+            console.log("开始滚动！");
+        }
+
+        var scrollFunc = function (e) {
+            e = e || window.event;
+            var top = document.documentElement.scrollTop || document.body.scrollTop;
+            if (e.wheelDelta) { //第一步：先判断浏览器IE，谷歌滑轮事件
+                size(top);
+            } else if (e.detail) { //Firefox滑轮事件
+                size(top);
+
+            }
+        }
+        //给页面绑定滑轮滚动事件
+        if (document.addEventListener) {//firefox
+            document.addEventListener('DOMMouseScroll', scrollFunc, false);
+        }
+        function size(a){
+            var b = document.getElementById("kuaidian-search");
+            if(a>=100){
+                b.style.display = "block";
+            }else if(a<100){
+                b.style.display = "none";
+            }
+        }
+        //滚动滑轮触发scrollFunc方法 //ie 谷歌
+        window.onmousewheel = document.onmousewheel = scrollFunc;
+    </script>
 </body>
+
 </html>
