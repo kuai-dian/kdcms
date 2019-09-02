@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快点网络科技</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+        body {
+            background: #C9EDF8;
+        }
+        .wrapper {
+            display: flex;
+            background: #FFF;
+            margin: 20px auto;
+            width: 1273px;
+        }
+        .wrapper .content-left {
+            width: 50%;
+        }
+        .wrapper .content-right {
+            width: 50%;
+        }
+        .wrapper .content-right .welcome_title {
+            margin: 67px 129px 80px 141px;
+            text-align: center;
+            font-size: 33px;
+            color: #67B6CE;
+        }
+        .wrapper .content-right .input {
+            height: 43px;
+            margin-bottom: 39px;
+        }
+        .wrapper .content-right .input>span {
+            font-size: 15px;
+            color: #666666;
+            margin-left: 111px;
+            line-height: 43px;
+        }
+        .wrapper .content-right .input:nth-child(2)>span {
+            margin-right: 15px;
+        }
+        .wrapper .content-right .input input[type="text"] {
+            width: 344px;
+            height: 43px;
+            border:1px solid rgba(177,177,177,1);
+            border-radius:3px;
+            text-indent: 19px;
+            font-size: 15px;
+            font-weight:normal;
+            line-height:39px;
+        }
+        .wrapper .content-right .input:nth-child(3) input[type="text"] {
+            width: 198px;
+        }
+        .wrapper .content-right .button {
+            padding: 8px 111px 37px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .wrapper .content-right .button input[type="submit"] {
+            cursor: pointer;
+            width:188px;
+            height:59px;
+            font-size: 27px;
+            color: #FFF;
+            background:rgba(68,161,190,1);
+            box-shadow:0px 3px 8px 0px rgba(68, 190, 161, 0.35);
+            border-radius:4px;
+        }
+        .wrapper .content-right .button input[type="button"] {
+            cursor: pointer;
+            width:188px;
+            height:59px;
+            font-size: 27px;
+            color: #44A1BE;
+            border:1px solid rgba(68,161,190,1);
+            background:rgba(255,255,255,1);
+            box-shadow:0px 3px 8px 0px rgba(58,170,168,0.5);
+            border-radius:4px;
+        }
+        .wrapper .content-right .third-party_login>div:nth-child(1) {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            width: 270px;
+            font-size: 22px;
+            color: #8D9EAD;
+            font-size:22px;
+            font-family:Adobe Heiti Std;
+            font-weight:normal;
+            color:rgba(141,158,173,1);
+            line-height:36px;
+        }
+        .wrapper .content-right .third-party_login>div:nth-child(1)>div:nth-child(1),
+        .wrapper .content-right .third-party_login>div:nth-child(1)>div:nth-child(2) {
+            width:66px;
+            height:1px;
+            margin: auto 0;
+            background:rgba(141,158,173,1);
+        }
+        .wrapper .content-right .third-party_login>div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            margin: 34px auto 40px;
+            width: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content-left">
+        </div>
+        <div class="content-right">
+            <div class="welcome_title">欢迎登录快点网络科技</div>
+            <div class="login_box">
+                <form action="">
+                    <div class="input">
+                        <span>用户名：</span>
+                        <input type="text" placeholder="请输入手机/用户名/邮箱">
+                    </div>
+                    <div class="input">
+                        <span>密码：</span>
+                        <input type="text" placeholder="请输入账户登录密码">
+                    </div>
+                    <div class="input">
+                        <span>验证码：</span>
+                        <input type="text" placeholder="请输入验证码">
+                    </div>
+                    <div class="button">
+                        <input type="submit" method="post" value="登录">
+                        <input type="button" value="注册">
+                    </div>
+                </form>
+            </div>
+            <div class="third-party_login">
+                <div>
+                    <div></div>
+                    第三方登录
+                    <div></div>
+                </div>
+                <div>
+                    <a title="微信" href="" id="login_weixin">
+                        <img src="images/wechat.png" alt="">
+                    </a>
+                    <a title="QQ" href="" id="login_qq">
+                        <img src="images/qq.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
